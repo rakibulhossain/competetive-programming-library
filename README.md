@@ -1,3 +1,4 @@
 # competetive-programming-library
-Algorithms:
+Algorithm implementation in c++ for competitive programming purpose
+## Algorithms:
  
