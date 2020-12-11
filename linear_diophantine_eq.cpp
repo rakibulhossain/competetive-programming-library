@@ -29,8 +29,8 @@ void shift_solution(int &x,int &y,int a,int b,int cnt){
 }
 int find_all_sol(int a,int b,int c,int minx,int maxx,int miny,int maxy){
     if(a==0&&b==0) return (maxx-minx+1)*(maxy-miny+1)*(c==0);
-    if(a==0) return (maxx-minx+1)*(c%b==0);
-    if(b==0) return (maxy-miny+1)*(c%a==0);
+    if(a==0) return (maxx-minx+1)*(c%b==0)*(c/b>=miny&&c/b<=maxy);
+    if(b==0) return (maxy-miny+1)*(c%a==0)*(c/a>=minx&&c/a<=maxx);
     int x,y,g;
     if(!find_any_sol(a,b,c,x,y,g)) return 0;
     a/=g;
@@ -66,5 +66,6 @@ int find_all_sol(int a,int b,int c,int minx,int maxx,int miny,int maxy){
 }
 int main(){
     // if a =0 swap (a,b)
+
     return 0;
 }
