@@ -1,4 +1,4 @@
-# competetive-programming-library
+# Competetive Programming Library
 Algorithm implementation in c++ for competitive programming purpose
 ## Algorithms
   > ### Graphs
